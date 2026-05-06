@@ -1,0 +1,19 @@
+h1,h2 {color: blue;}
+
+
+
+h1 h2 {
+    color:green;
+}
+
+div a {
+color: azure !important;
+}
+
+nav a.active{
+
+}
+
+.active{
+
+}
