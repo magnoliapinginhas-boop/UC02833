@@ -71,8 +71,9 @@ main {
 /* CARDS */
 .cards {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     gap: 15px;
+    width: 100%;
 }
 
 /* CARD */
@@ -91,7 +92,7 @@ main {
     font-size: 20px;
     font-weight: bold;
     list-style: none;
-    margin: bottom 20px;
+    margin-bottom: 20px;
 }
 
 /* tirar seta */
@@ -108,6 +109,7 @@ main {
 /* hover */
 .card:hover {
     transform: translateY(-5px);
+    background: white;
 }
 
 /* aberto */
@@ -115,35 +117,46 @@ main {
     background: white;
 }
 
-/* FORM */
-form {
+/* FORMULÁRIO EM COLUNA (VERTICAL) */
+.formulario {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: column; /* Alinha os itens um abaixo do outro */
+    width: 100%;
     max-width: 400px;
-    margin: 20px auto;
+    margin: 30px auto;
+    gap: 12px; /* Espaço entre cada campo */
 }
 
-input, textarea {
+.formulario label {
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
     padding: 12px;
-    border-radius: 10px;
     border: none;
-    outline: none;
+    border-radius: 10px;
+    width: 100%; /* Garante que ocupem a largura total do container */
+    font-family: inherit;
 }
 
-/* BOTÃO */
-button {
-    padding: 12px;
+.formulario button { 
+    padding: 15px;
+    margin-top: 20px;
     border: none;
     border-radius: 10px;
     background-color: #ffffff;
+    color: #5f0a87;
     cursor: pointer;
     font-weight: bold;
     transition: 0.3s;
 }
 
-button:hover {
+.formulario button:hover {
     background-color: #ddd;
+    transform: scale(1.02);
 }
 
 /* LINKS */
@@ -153,7 +166,9 @@ a {
 
 /* FOOTER */
 footer {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 20px;
     opacity: 0.8;
 }
@@ -172,19 +187,17 @@ footer {
 /* título contacto */
 .titulo-contacto {
     display: flex;
-    align-items: column;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 20px;
-    justify-content: center;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 /* imagem pequena */
 .titulo-contacto img {
     width: 60px;
     height: auto;
-    margin-top: 30px;
+    margin-top: 45px;
 }
 
 .titulo-contacto img{
@@ -214,4 +227,25 @@ footer {
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
+    display: block;
+    width: fit-content;
+    margin: 25px auto 0 auto;
+}
+.sobre-centro h1{
+    margin-bottom: 30px;
+}
+.titulo-contacto h2{
+    font-size: 45px;
+    font-weight: bold;
+}
+.sobre p{
+    font-size: 20px;
+}
+.sobre h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+label{
+    font-weight: bold;
+    margin-top: 10px;
 }

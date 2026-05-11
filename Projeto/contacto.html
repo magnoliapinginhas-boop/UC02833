@@ -1,44 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="estilo.css">
+    <div class="Contacto"></div>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <h1>Magnólia Martins</h1>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+
+<header>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+</header>
+
 <main>
-    <section>
+    <section class="titulo-contacto">
+        <img src="1151429.png" alt="Icone de contacto">
         <h2>Contacto</h2>
-
-        <form action="">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" required>
-
-            <label for="mensagem">mensagem</label>
-            <textarea id="mensagem" required></textarea>
-
-            <button type="submit">Enviar</button> 
-
-
-        </form>
     </section>
+
+    <!-- Adicionada a classe "formulario" aqui -->
+    <form class="formulario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
 </main>
+
 <footer>
-    <p> © 2026 Magnólia Martins </p>
+    © 2026 Magnólia Martins
+     <p>
+        <a href="Currículo.pdf">📄 Ver Currículo</a>
+    </p>
+
+    <p>
+        <a href="https://www.linkedin.com/in/magn%C3%B3lia-martins-691b44356/" target="_blank">🔗 LinkedIn</a>
+    </p>
 </footer>
-</body>
-</html>
